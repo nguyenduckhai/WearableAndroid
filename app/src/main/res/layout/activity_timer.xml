@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.TimerActivity"
+    android:id="@+id/relative_activity_timer">
+    
+    <com.github.florent37.shapeofview.shapes.ArcView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:elevation="4dp"
+        app:shape_arc_height="20dp"
+        app:shape_arc_position="bottom">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_timer_activity_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:text="adwadwad"/>
+    </com.github.florent37.shapeofview.shapes.ArcView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_activity_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textSize="56sp" />
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:id="@+id/RoundRectView"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/text_activity_timer"
+        android:layout_centerInParent="true"
+        app:shape_roundRect_bottomLeftRadius="30dp"
+        app:shape_roundRect_bottomRightRadius="30dp"
+        app:shape_roundRect_topLeftRadius="30dp"
+        app:shape_roundRect_topRightRadius="30dp">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="onClickStart"
+            android:textColor="@android:color/white"
+            android:background="#0F77E9"
+            android:text="@string/start"/>
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_reset"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textSize="20sp"
+        android:text="@string/reset"
+        android:layout_below="@+id/RoundRectView"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

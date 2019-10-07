@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Wearable</string>
+    <string name="action_list">Activity list</string>
+    <string name="text_view_prediction">PREDICTION</string>
+    <string name="stand">stand</string>
+    <string name="sit">sit</string>
+    <string name="stand_sit">stand_sit</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="label">label</string>
+    <string name="gyroscope">Gyroscope chart</string>
+    <string name="accelerometer">Accelerometer chart</string>
+    <string name="start">start</string>
+    <string name="stop">stop</string>
+    <string name="reset">reset</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dd.ShadowLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:sl_shadowRadius="3dp"
+        app:sl_dx="0dp"
+        app:sl_dy="3dp"
+        app:sl_shadowColor="#397A7A7A"
+        app:sl_cornerRadius="30dp">
+        <com.github.florent37.shapeofview.shapes.RoundRectView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:shape_roundRect_bottomLeftRadius="30dp"
+            app:shape_roundRect_bottomRightRadius="30dp"
+            app:shape_roundRect_topLeftRadius="30dp"
+            app:shape_roundRect_topRightRadius="30dp">
+            <Button
+                android:id="@+id/button_label"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/label"
+                android:textColor="@android:color/white"
+                android:background="#0F77E9"/>
+            </com.github.florent37.shapeofview.shapes.RoundRectView>
+    </com.dd.ShadowLayout>
+</layout>

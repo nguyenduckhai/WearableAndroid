@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dd.ShadowLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:sl_shadowRadius="3dp"
+        app:sl_dx="0dp"
+        app:sl_dy="3dp"
+        app:sl_shadowColor="#397A7A7A"
+        app:sl_cornerRadius="15dp">
+        <com.github.florent37.shapeofview.shapes.RoundRectView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:shape_roundRect_bottomLeftRadius="15dp"
+            app:shape_roundRect_bottomRightRadius="15dp"
+            app:shape_roundRect_topLeftRadius="15dp"
+            app:shape_roundRect_topRightRadius="15dp">
+            <RelativeLayout
+                android:id="@+id/relative_prediction_background_main_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#0F77E9">
+                <LinearLayout
+                    android:id="@+id/shape"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+                    <com.github.florent37.shapeofview.shapes.RoundRectView
+                        android:layout_height="50dp"
+                        android:layout_width="50dp"
+                        android:layout_gravity="center"
+                        app:shape_roundRect_bottomLeftRadius="15dp"
+                        app:shape_roundRect_bottomRightRadius="15dp"
+                        app:shape_roundRect_topLeftRadius="15dp"
+                        app:shape_roundRect_topRightRadius="15dp">
+                        <ImageView
+                            android:id="@+id/img_prediction_main_menu"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@mipmap/ic_launcher"/>
+                    </com.github.florent37.shapeofview.shapes.RoundRectView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@+id/shape"
+                    android:layout_alignParentRight="true"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:alpha="0.5"
+                        android:textColor="@android:color/white"
+                        android:text="@string/text_view_prediction"/>
+
+                    <View android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:alpha="0.5"
+                        android:background="@android:color/white"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/text_view_action_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:textColor="@android:color/white"
+                            android:alpha="0.8"
+                            android:text="STAND"/>
+
+                        <TextView
+                            android:id="@+id/text_view_action_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="1"
+                            android:textColor="@android:color/white"
+                            android:alpha="0.8"
+                            android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </com.github.florent37.shapeofview.shapes.RoundRectView>
+    </com.dd.ShadowLayout>
+</layout>

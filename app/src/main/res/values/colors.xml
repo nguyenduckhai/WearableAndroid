@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#F2F2F2</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorActionBar">#000000</color>
+    <color name="color_sit">#0DCB94</color>
+    <color name="color_stand">#A262E9</color>
+    <color name="color_stand_sit">#FCB639</color>
+    <color name="color_button_timer_stop_background">#D81B60</color>
+    <color name="color_button_timer_start_background">#0F77E9</color>
+</resources>
